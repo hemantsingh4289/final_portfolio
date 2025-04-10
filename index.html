@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hemant Singh Dodiya | Full Stack, Java & Flutter Developer" />
+  <title>Hemant | Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Hemant</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <i class="fas fa-bars hamburg" id="open-menu-btn"></i>
+    </div>
+    <div class="dropdown-menu" id="dropdown">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <i class="fas fa-times cancel" id="close-menu-btn"></i>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero-section">
+    <img src="image/hemant_img.jpg" alt="Hemant Profile" class="profile-img" data-aos="zoom-in">
+    <h1 data-aos="fade-up">Hey, I'm <span class="highlight">Hemant Singh</span></h1>
+    <div class="typewriter" data-aos="fade-up" data-aos-delay="200">I'm a <span id="typewriter-text"></span></div>
+    <p data-aos="fade-up" data-aos-delay="300">
+      A Full Stack Developer, Java Expert & Flutter Enthusiast crafting clean, scalable and powerful digital experiences.
+    </p>
+    <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+      <a href="https://github.com/hemantsingh4289" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/hemantsinghdodiya" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="500">
+      <a href="image/Hemant Singh Updated2.pdf" download><button class="btn">Download CV</button></a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about-section" data-aos="fade-up">
+    <h2 class="section-title">👨‍💻 About Me</h2>
+    <div class="about-content container">
+      <img src="image/hemant_img.jpg" alt="Hemant About" class="about-img">
+      <div>
+        <p>
+          I'm a passionate Full Stack Developer with expertise in Java, Spring Boot, and Flutter. Currently a Java Developer Trainee at Debugshala, I’ve worked on real-world projects ranging from AI chatbots to responsive web platforms. I believe in building things that not only work, but WOW. Let’s innovate something incredible together!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="skills-section" data-aos="fade-up">
+    <h2 class="section-title">🛠 Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">Java / Spring Boot</div>
+      <div class="skill-card">Flutter / Dart</div>
+      <div class="skill-card">HTML / CSS / JS</div>
+      <div class="skill-card">JSP / Servlet</div>
+      <div class="skill-card">MySQL</div>
+      <div class="skill-card">Git / GitHub</div>
+      <div class="skill-card">Android Studio</div>
+      <div class="skill-card">Problem Solving</div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="projects" aria-label="Projects">
+    <div class="container">
+      <h2 class="section-title">🚀 Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <img src="image/legal-services_9724982.png" alt="Elegalshala App UI" />
+          <h3><i class="fas fa-gavel"></i> Elegalshala – Mobile App</h3>
+          <p><strong>Role:</strong> Flutter Trainee | <strong>Org:</strong> Elegalshala</p>
+          <p>User-friendly legal Q&A app using Flutter. Focused on UI/UX & chat interface.</p>
+        </article>
+        <article class="project-card">
+          <img src="image/process.png" alt="User Management System screenshot" />
+          <h3><i class="fas fa-user-cog"></i> User Management System</h3>
+          <p><strong>Tech:</strong> JSP, Servlet, JDBC, MySQL</p>
+          <p>Backend CRUD system with SQL optimization and security.</p>
+        </article>
+        <article class="project-card">
+          <img src="image/elearning.png" alt="E-Learning UI" />
+          <h3><i class="fas fa-graduation-cap"></i> E-Learning Platform</h3>
+          <p><strong>Tech:</strong> HTML, CSS, JS</p>
+          <p>Responsive platform with progress tracking & authentication.</p>
+        </article>
+        <article class="project-card">
+          <img src="image/icons8-chatgpt-48.png" alt="ChatGPT Clone UI" />
+          <h3><i class="fas fa-robot"></i> ChatGPT Clone</h3>
+          <p><strong>Tech:</strong> HTML, CSS, JS</p>
+          <p>Interactive UI with theme switching & chat history.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT FORM ===== -->
+  <section id="contact" class="contact-section" data-aos="fade-up">
+    <h2 class="section-title">📬 Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+      <p id="form-msg" class="form-msg"></p>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Hemant Singh Dodiya. All rights reserved.</p>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
